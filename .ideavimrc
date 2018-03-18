@@ -23,6 +23,7 @@ nnoremap gu :action FindUsages<cr>
 nnoremap gh :action Back<cr>
 nnoremap gl :action Forward<cr>
 nnoremap gf :action FileStructurePopup<cr>
+nnoremap gn :action Generate<cr>
 
 nnoremap <leader>d "_d
 nnoremap <leader>p "0p
