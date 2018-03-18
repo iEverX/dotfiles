@@ -1,0 +1,29 @@
+inoremap jj <esc>
+
+map <space> <leader>
+
+" Insert mode
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
+inoremap <C-l> <Right>
+inoremap <C-h> <Left>
+
+nnoremap <cr> :
+
+nnoremap <leader>vs :source ~/.ideavimrc<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<cr>
+
+nnoremap <leader>h :action GotoDeclaration<cr>
+nnoremap <leader><space> :action HideAllWindows<cr>
+
+nnoremap gd :action GotoDeclaration<cr>
+nnoremap gi :action GotoImplementation<cr>
+nnoremap gs :action GotoSuperMethod<cr>
+nnoremap gu :action FindUsages<cr>
+nnoremap gh :action Back<cr>
+nnoremap gl :action Forward<cr>
+nnoremap gf :action FileStructurePopup<cr>
+
+nnoremap <leader>d "_d
+nnoremap <leader>p "0p
+nnoremap <leader>P "0P
