@@ -21,7 +21,7 @@ nnoremap <cr> :
 nnoremap <leader>/ :nohls<cr>
 
 nnoremap <leader>vs :source ~/.ideavimrc<cr>
-nnoremap 1 @a
+nnoremap , @a
 
 nnoremap gc :action GotoClass<cr>
 nnoremap ga :action GotoAction<cr>
