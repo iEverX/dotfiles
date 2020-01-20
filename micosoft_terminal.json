@@ -1,0 +1,98 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{dacca76f-f467-571f-97d0-39f62dba92b9}",
+
+    "initialCols": 100,
+
+    "profiles": {
+        "defaults": {
+            "fontFace": "Consolas",
+            "fontSize": 14,
+            "colorScheme": "Deuteranopia",
+            "backgroundImage": "E://images/world.jpg",
+            "backgroundImageOpacity": 0.2
+            // "useAcrylic": true,
+            // "acrylicOpacity": 0.95
+            // "selectionBackground": "#546ae7"
+        },
+        "list": [
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{dacca76f-f467-571f-97d0-39f62dba92b9}",
+                "hidden": false,
+                "name": "bionic",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "//wsl$/bionic/root"
+            },
+            {
+                "guid": "{af8bd6f6-2130-5141-beb8-5dc7665e6a8d}",
+                "hidden": false,
+                "name": "yfd",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "//wsl$/yfd/root"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "//wsl$/Ubuntu/root"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        {"command": "newTab", "keys": ["ctrl+t"]},
+        {"command": "nextTab", "keys": ["alt+l"]},
+        {"command": "prevTab", "keys": ["alt+h"]},
+
+        // pane
+        { "command": "splitHorizontal", "keys": [ "alt+shift+-" ] },
+        { "command": "splitVertical", "keys": [ "alt+shift+plus" ] },
+
+        { "command": { "action": "moveFocus", "direction":"down" }, "keys": [ "alt+down" ] },
+        { "command": { "action": "moveFocus", "direction":"left" }, "keys": [ "alt+left" ] },
+        { "command": { "action": "moveFocus", "direction":"right" }, "keys": [ "alt+right" ] },
+        { "command": { "action": "moveFocus", "direction":"up" }, "keys": [ "alt+up" ] },
+        { "command": { "action": "moveFocus", "direction":"down" }, "keys": [ "alt+j" ] },
+        { "command": { "action": "moveFocus", "direction":"left" }, "keys": [ "alt+h" ] },
+        { "command": { "action": "moveFocus", "direction":"right" }, "keys": [ "alt+l" ] },
+        { "command": { "action": "moveFocus", "direction":"up" }, "keys": [ "alt+k" ] },
+
+
+        { "command": { "action": "resizePane", "direction":"down" }, "keys": [ "alt+shift+down" ] },
+        { "command": { "action": "resizePane", "direction":"left" }, "keys": [ "alt+shift+left" ] },
+        { "command": { "action": "resizePane", "direction":"right" }, "keys": [ "alt+shift+right" ] },
+        { "command": { "action": "resizePane", "direction":"up" }, "keys": [ "alt+shift+up" ] },
+        { "command": "closePane", "keys": ["ctrl+d"] }
+    ]
+}
