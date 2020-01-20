@@ -13,7 +13,7 @@
         "defaults": {
             "fontFace": "Consolas",
             "fontSize": 14,
-            "colorScheme": "Deuteranopia",
+            "colorScheme": "One Half Dark",
             "backgroundImage": "E://images/world.jpg",
             "backgroundImageOpacity": 0.2
             // "useAcrylic": true,
